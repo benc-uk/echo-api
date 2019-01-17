@@ -1,6 +1,6 @@
 # Echo API
-Simple dummy API, returns requesting source IP and other debug data
-Handy for deploying to PaaS services & containers
+Simple dummy API, returns requesting source IP and other debug data.  
+Useful for deploying to PaaS services & containers when traffic routing and source IPs might not be easy to ascertain 
 
 
 # Container
