@@ -1,0 +1,11 @@
+{
+  "name": "echo-api",
+  "version": "1.0.0",
+  "description": "Simple dummy API returns source IP and other debug data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ben Coleman",
+  "license": "MIT"
+}
