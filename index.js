@@ -3,10 +3,10 @@ const os = require('os');
 
 // Create a HTTP server
 http.createServer(function (req, res) {
-  
+
   // Logic to get hostname, handles Azure app service
   var hostname = process.env['WEBSITE_SITE_NAME'] ? process.env['WEBSITE_SITE_NAME']+'.azurewebsites.net' : os.hostname()
-  
+
   // Swagger for APIM
   if(req.url.includes("swagger.json")) {
     let swagger = require('fs').readFileSync('swagger.json').toString();
@@ -28,7 +28,7 @@ http.createServer(function (req, res) {
     sourceIP: req.connection.remoteAddress,
     xClientIP: x_client,
     xForwardedFor: x_forwarded,
-    //requestHeaders: req.headers,
+    requestHeaders: req.headers,
     serverInfo: {
       type: os.type(), 
       coreCount: os.cpus().length, 
