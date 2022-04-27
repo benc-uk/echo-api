@@ -4,11 +4,11 @@ Useful for deploying to PaaS services & containers when traffic routing and sour
 
 
 # Container
-Docker image is available on Dockerhub as `bencuk/echoapi`
+Docker image is available on GitHub as `ghcr.io/benc-uk/echo-api`
 
 ```
 docker pull bencuk/echoapi
-docker run --rm -it -p 8080:8080 bencuk/echoapi
+docker run --rm -it --init -p 8080:8080 ghcr.io/benc-uk/echo-api
 ```
 
 # Azure App Service 
